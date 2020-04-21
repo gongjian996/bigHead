@@ -6,8 +6,14 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
+    num:0,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  clickNumAdd(){
+    this.setData({
+      num:this.data.num + 1
+    })
   },
   //事件处理函数
   bindViewTap: function() {
